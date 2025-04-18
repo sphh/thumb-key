@@ -100,7 +100,14 @@ val KB_DE_THUMBKEY_SYMNUM_MAIN =
                         ),
                     topLeft = KeyC("|", color = MUTED),
                     left = KeyC("o"),
-                    bottom = KeyC("ö"),
+                    bottomLeft = KeyC("ö"),
+                    bottom =
+                        KeyC(
+                            display = KeyDisplay.IconDisplay(Icons.Outlined.ArrowDropDown),
+                            action = ToggleShiftMode(false),
+                            swipeReturnAction = ToggleCurrentWordCapitalization(false),
+                            color = MUTED,
+                        ),
                     bottomRight = KeyC("]", color = MUTED),
                     right = KeyC(")", color = MUTED),
                     topRight = KeyC("}", color = MUTED),
